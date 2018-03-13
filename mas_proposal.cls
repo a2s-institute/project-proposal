@@ -108,12 +108,16 @@ not set. Please fix this.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand*{\maketitle}{%
 \begin{titlepage}
-{\raggedleft%
+\begin{minipage}{0.475\textwidth}
     \centering
-	\includegraphics[width=8cm]{images/Logo-HBRS-cyan.png}\par
-}\vspace{1cm}
-	\centering
-
+	\includegraphics[height=1.3cm]{images/Logo-HBRS-cyan.png}
+\end{minipage}
+\begin{minipage}{0.475\textwidth}
+    \centering
+    \includegraphics[height=1.3cm]{images/b-it.pdf}
+\end{minipage}
+\vspace{3cm}
+\centering
 \vspace{1.5cm}
 {\Large\@project\unskip\strut\par}
 \vspace{1.5cm}
@@ -133,7 +137,7 @@ Supervised by\par
 
 \vfill
 
-{\large \@date\par}
+{\large Month 20XX}
 \end{titlepage}
 }
 
