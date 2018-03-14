@@ -33,10 +33,7 @@
 \ProcessOptions\relax
 
 % Load class options
-\LoadClass[10pt,a4paper, oneside]{book}
-
-\renewcommand{\sfdefault}{phv}
-\renewcommand{\familydefault}{\sfdefault}
+\LoadClass[12pt,a4paper, oneside]{book}
 
 %-------------------------------------------------------------------------------
 %	VARIOUS REQUIRED PACKAGES AND CONFIGURATIONS
@@ -76,9 +73,10 @@
 % \usepackage{rotfloat}
 % \usepackage[page,toc,titletoc,title]{appendix} % Add appendices
 % \usepackage{tocloft} % Add the word appendix to the TOC
-
+\usepackage{setspace}
 \usepackage{lipsum} % Used to test
 
+\onehalfspacing
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Fonts
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -116,7 +114,7 @@ not set. Please fix this.}
     \centering
     \includegraphics[height=1.3cm]{images/b-it.pdf}
 \end{minipage}
-\vspace{3cm}
+\vfill
 \centering
 \vspace{1.5cm}
 {\Large\@project\unskip\strut\par}
@@ -145,22 +143,22 @@ Supervised by\par
 % PAGE LAYOUT
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SIDE MARGINS:
-\oddsidemargin 28pt      %   Left margin on odd-numbered pages.
-\evensidemargin 0pt      %   Left margin on even-numbered pages.
-\marginparwidth 40pt     %   Width of marginal notes.
-
-\marginparsep 12pt          % Horizontal space between outer margin and
-                            % marginal note
-\textwidth 15cm             % width of text
-
-% VERTICAL SPACING:
-                         % Top of page:
-\topmargin  10pt          %    distance from top of page to running head
-\headheight 14pt         %    Height of box containing running head.
-\headsep  1cm            %    Space between running head and text.
-\textheight 8.8in        %    space for text
-\footskip 30pt           %    Distance from baseline of box containing foot
-                         %    to baseline of last line of text.
+% \oddsidemargin 28pt      %   Left margin on odd-numbered pages.
+% \evensidemargin 0pt      %   Left margin on even-numbered pages.
+% \marginparwidth 40pt     %   Width of marginal notes.
+%
+% \marginparsep 12pt          % Horizontal space between outer margin and
+%                             % marginal note
+% \textwidth 15cm             % width of text
+%
+% % VERTICAL SPACING:
+%                          % Top of page:
+% \topmargin  10pt          %    distance from top of page to running head
+% \headheight 14pt         %    Height of box containing running head.
+% \headsep  1cm            %    Space between running head and text.
+% \textheight 8.8in        %    space for text
+% \footskip 30pt           %    Distance from baseline of box containing foot
+%                          %    to baseline of last line of text.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
