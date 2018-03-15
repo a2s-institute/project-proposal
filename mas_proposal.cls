@@ -221,9 +221,9 @@ Supervised by\par
 \titleformat{\chapter}
     [display]
     {\flushleft}%format
-    {}%label
+    {\bfseries\Large}%label
     {0pt}%sep
-    {\huge\thechapter.~}%before code
+    {\bfseries\Large\thechapter.~}%before code
     % [\vspace{-1cm}]
 
 \titlespacing{\chapter}{0pt}{-50pt}{10pt}
@@ -232,9 +232,16 @@ Supervised by\par
 \titleformat{\section}
     [display]
     {\flushleft}%format
-    {}%label
+    {\bfseries\large}%label
     {0pt}%sep
-    {\Large\thesection.~}%before code
+    {\bfseries\large\thesection.~}%before code
+
+\titleformat{\subsection}
+    [display]
+    {\flushleft}%format
+    {\bfseries\large}%label
+    {0pt}%sep
+    {\bfseries\large\thesubsection.~}%before code
 
 
 
