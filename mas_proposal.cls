@@ -64,7 +64,7 @@
 % \usepackage{lastpage}
 % \usepackage[small, md, sc]{titlesec}
 %\usepackage{inputenc}
-% \usepackage{geometry}
+\usepackage{geometry}
 % %\usepackage{tocloft}
 % \usepackage{adjustbox} % to limit size of tables
 % \usepackage{pbox}
@@ -87,6 +87,8 @@
 
 \renewcommand\bibname{References} %Change Bibliography to References
 
+\newcommand{\thirdpartylogo}[1]{\def\@thirdpartylogo{#1}}
+\thirdpartylogo{}
 
 \newcommand*{\supervisors}[1]{\gdef\@supervisors{#1}%
 }
@@ -106,6 +108,8 @@ not set. Please fix this.}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand*{\maketitle}{%
 \begin{titlepage}
+\newgeometry{left=3cm, bottom=3cm}
+
 \begin{minipage}{0.475\textwidth}
     \centering
 	\includegraphics[height=1.3cm]{images/Logo-HBRS-cyan.png}
@@ -114,6 +118,19 @@ not set. Please fix this.}
     \centering
     \includegraphics[height=1.3cm]{images/b-it.pdf}
 \end{minipage}
+\ifx\@thirdpartylogo\@empty
+  \relax
+\else
+\centering
+\vfill
+\begin{minipage}{0.4\textwidth}
+    \centering
+    \includegraphics[height=1.3cm]{\@thirdpartylogo}
+\end{minipage}
+
+\fi%
+
+
 \vfill
 \centering
 \vspace{1.5cm}
@@ -137,6 +154,8 @@ Supervised by\par
 
 {\large Month 20XX}
 \end{titlepage}
+\restoregeometry
+
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
