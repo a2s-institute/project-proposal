@@ -7,7 +7,7 @@
 %
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{mas_report}[2018/01/25 The MAS report class]
+\ProvidesClass{mas_proposal}[2018/01/25 The MAS report class]
 
 % \newcommand{\test}{Project test!}
 \RequirePackage{xcolor}
