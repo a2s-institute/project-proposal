@@ -87,6 +87,7 @@
 
 \renewcommand\bibname{References} %Change Bibliography to References
 
+
 \newcommand{\thirdpartylogo}[1]{\def\@thirdpartylogo{#1}}
 \thirdpartylogo{}
 
@@ -225,9 +226,14 @@ Supervised by\par
     {0pt}%sep
     {\bfseries\Large\thechapter.~}%before code
     % [\vspace{-1cm}]
+\titleformat{name=\chapter,numberless}
+  [display]
+  {\flushleft}
+  {\bfseries\Large}
+  {0pt}
+  {\bfseries\Large}
 
 \titlespacing{\chapter}{0pt}{-50pt}{10pt}
-
 
 \titleformat{\section}
     [display]
@@ -243,6 +249,12 @@ Supervised by\par
     {0pt}%sep
     {\bfseries\large\thesubsection.~}%before code
 
-
+% \titleformat{\section}
+%   [block]
+%   {\large\scshape\centering{\Roman{section}.}}
+%   {}
+%   {1em}
+%   {}
+%
 
 \endinput
