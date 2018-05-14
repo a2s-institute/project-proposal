@@ -1,13 +1,14 @@
 sudo: required
 dist: trusty
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive
-  texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended latex-xcolor
+  - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive
+    texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended
+    latex-xcolor
 script:
-- mkdir _build
-- pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build *.tex
-- rm -rf _build
-- zip -r MAS-project-proposal.zip images LastNameI-[RnD-MT]Proposal.tex LastNameI-[RnD-MT]Proposal.pdf README.md mas_proposal.cls rnd_deliverable_timeline.png
+  - mkdir _build
+  - pdflatex -interaction=nonstopmode -halt-on-error -output-directory _build *.tex
+  - rm -rf _build
+  - zip -r MAS-project-proposal.zip .
 deploy:
   provider: releases
   api_key:
