@@ -97,7 +97,7 @@
 not set. Please fix this.}
 
 % Colors
-\definecolor{hbrs}{RGB}{11,161,226}
+\definecolor{hbrs}{RGB}{1,106,186}
 
 \definecolor{keywords}{RGB}{0,100,0}
 \definecolor{comments}{RGB}{0,100,50}
