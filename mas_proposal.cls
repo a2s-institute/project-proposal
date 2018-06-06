@@ -33,7 +33,7 @@
 \ProcessOptions\relax
 
 % Load class options
-\LoadClass[12pt,a4paper, oneside]{book}
+\LoadClass[12pt,a4paper, oneside]{article}
 
 %-------------------------------------------------------------------------------
 %	VARIOUS REQUIRED PACKAGES AND CONFIGURATIONS
