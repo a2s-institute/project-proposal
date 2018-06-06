@@ -219,35 +219,41 @@ Supervised by\par
 % \renewcommand*\sectionmark[1]{\markright{\textcolor{hbrs}{\thesection.\ } #1}}
 
 %% Chapter titles have the same layout as parts.
-\titleformat{\chapter}
-    [display]
-    {\flushleft}%format
-    {\bfseries\Large}%label
-    {0pt}%sep
-    {\bfseries\Large\thechapter.~}%before code
-    % [\vspace{-1cm}]
-\titleformat{name=\chapter,numberless}
-  [display]
-  {\flushleft}
-  {\bfseries\Large}
-  {0pt}
-  {\bfseries\Large}
+% \titleformat{\chapter}
+%     [display]
+%     {\flushleft}%format
+%     {\bfseries\Large}%label
+%     {0pt}%sep
+%     {\bfseries\Large\thechapter.~}%before code
+%     % [\vspace{-1cm}]
+% \titleformat{name=\chapter,numberless}
+%   [display]
+%   {\flushleft}
+%   {\bfseries\Large}
+%   {0pt}
+%   {\bfseries\Large}
+%
+% \titlespacing{\chapter}{0pt}{-50pt}{10pt}
+%
+% \titleformat{\section}
+%     [display]
+%     {\flushleft}%format
+%     {\bfseries\large}%label
+%     {0pt}%sep
+%     {\bfseries\large\thesection.~}%before code
+%
+% \titleformat{\subsection}
+%     [display]
+%     {\flushleft}%format
+%     {\bfseries\large}%label
+%     {0pt}%sep
+%     {\bfseries\large\thesubsection.~}%before code
 
-\titlespacing{\chapter}{0pt}{-50pt}{10pt}
-
-\titleformat{\section}
-    [display]
-    {\flushleft}%format
-    {\bfseries\large}%label
-    {0pt}%sep
-    {\bfseries\large\thesection.~}%before code
-
-\titleformat{\subsection}
-    [display]
-    {\flushleft}%format
-    {\bfseries\large}%label
-    {0pt}%sep
-    {\bfseries\large\thesubsection.~}%before code
+\usepackage{sectsty}
+\chapterfont{\color{hbrs}}
+\sectionfont{\color{hbrs}}
+\subsectionfont{\color{hbrs}}
+\subsubsectionfont{\color{hbrs}}
 
 % \titleformat{\section}
 %   [block]
