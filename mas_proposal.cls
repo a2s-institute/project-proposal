@@ -153,7 +153,7 @@ Supervised by\par
 
 \vfill
 
-{\large Month 20XX}
+{\large \@date\par}
 \end{titlepage}
 \restoregeometry
 
