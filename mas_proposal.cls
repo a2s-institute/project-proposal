@@ -193,10 +193,10 @@ Supervised by\par
     \fancyhf{}
     \renewcommand*\headrulewidth{0pt}
     \renewcommand*\footrulewidth{0pt}
-    \fancyfoot[L]{\@author}
-    \fancyhead[C]{\@title}
-    \fancyfoot[C]{\thepage}
-    \fancyfoot[R]{\@project}
+    \fancyfoot[L]{\color{darkgray}\footnotesize\@author}
+    \fancyhead[C]{\color{darkgray}\footnotesize\@title}
+    \fancyfoot[C]{\color{darkgray}\footnotesize\thepage}
+    \fancyfoot[R]{\color{darkgray}\footnotesize\@project}
 }
 
 %% Fancy style for the main matter.
