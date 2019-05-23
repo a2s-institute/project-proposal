@@ -33,7 +33,7 @@
 \ProcessOptions\relax
 
 % Load class options
-\LoadClass[12pt,a4paper, oneside]{book}
+\LoadClass[12pt,a4paper, oneside]{article}
 
 %-------------------------------------------------------------------------------
 %	VARIOUS REQUIRED PACKAGES AND CONFIGURATIONS
@@ -98,7 +98,7 @@
 not set. Please fix this.}
 
 % Colors
-\definecolor{hbrs}{RGB}{11,161,226}
+\definecolor{hbrs}{RGB}{1,106,186}
 
 \definecolor{keywords}{RGB}{0,100,0}
 \definecolor{comments}{RGB}{0,100,50}
@@ -194,10 +194,10 @@ Supervised by\par
     \fancyhf{}
     \renewcommand*\headrulewidth{0pt}
     \renewcommand*\footrulewidth{0pt}
-    \fancyfoot[L]{\@author}
-    \fancyhead[C]{\@title}
-    \fancyfoot[C]{\thepage}
-    \fancyfoot[R]{\@project}
+    \fancyfoot[L]{\color{darkgray}\footnotesize\@author}
+    \fancyhead[C]{\color{darkgray}\footnotesize\@title}
+    \fancyfoot[C]{\color{darkgray}\footnotesize\thepage}
+    \fancyfoot[R]{\color{darkgray}\footnotesize\@project}
 }
 
 %% Fancy style for the main matter.
@@ -220,35 +220,41 @@ Supervised by\par
 % \renewcommand*\sectionmark[1]{\markright{\textcolor{hbrs}{\thesection.\ } #1}}
 
 %% Chapter titles have the same layout as parts.
-\titleformat{\chapter}
-    [display]
-    {\flushleft}%format
-    {\bfseries\Large}%label
-    {0pt}%sep
-    {\bfseries\Large\thechapter.~}%before code
-    % [\vspace{-1cm}]
-\titleformat{name=\chapter,numberless}
-  [display]
-  {\flushleft}
-  {\bfseries\Large}
-  {0pt}
-  {\bfseries\Large}
+% \titleformat{\chapter}
+%     [display]
+%     {\flushleft}%format
+%     {\bfseries\Large}%label
+%     {0pt}%sep
+%     {\bfseries\Large\thechapter.~}%before code
+%     % [\vspace{-1cm}]
+% \titleformat{name=\chapter,numberless}
+%   [display]
+%   {\flushleft}
+%   {\bfseries\Large}
+%   {0pt}
+%   {\bfseries\Large}
+%
+% \titlespacing{\chapter}{0pt}{-50pt}{10pt}
+%
+% \titleformat{\section}
+%     [display]
+%     {\flushleft}%format
+%     {\bfseries\large}%label
+%     {0pt}%sep
+%     {\bfseries\large\thesection.~}%before code
+%
+% \titleformat{\subsection}
+%     [display]
+%     {\flushleft}%format
+%     {\bfseries\large}%label
+%     {0pt}%sep
+%     {\bfseries\large\thesubsection.~}%before code
 
-\titlespacing{\chapter}{0pt}{-50pt}{10pt}
-
-\titleformat{\section}
-    [display]
-    {\flushleft}%format
-    {\bfseries\large}%label
-    {0pt}%sep
-    {\bfseries\large\thesection.~}%before code
-
-\titleformat{\subsection}
-    [display]
-    {\flushleft}%format
-    {\bfseries\large}%label
-    {0pt}%sep
-    {\bfseries\large\thesubsection.~}%before code
+\usepackage{sectsty}
+\chapterfont{\color{hbrs}}
+\sectionfont{\color{hbrs}}
+\subsectionfont{\color{hbrs}}
+\subsubsectionfont{\color{hbrs}}
 
 % \titleformat{\section}
 %   [block]
