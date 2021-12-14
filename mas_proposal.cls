@@ -251,10 +251,10 @@ Supervised by\par
 %     {\bfseries\large\thesubsection.~}%before code
 
 \usepackage{sectsty}
-\chapterfont{\color{hbrs}}
-\sectionfont{\color{hbrs}}
-\subsectionfont{\color{hbrs}}
-\subsubsectionfont{\color{hbrs}}
+\chapterfont{\color{black}}
+\sectionfont{\color{black}}
+\subsectionfont{\color{black}}
+\subsubsectionfont{\color{black}}
 
 % \titleformat{\section}
 %   [block]
